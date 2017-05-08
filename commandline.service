@@ -1,0 +1,9 @@
+[Service]
+User=pi
+Group=pi
+ExecStart=java -jar /vagrant/commandline-1.0.0.jar
+PIDFile=/var/run/commandline.pid
+Type=simple
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
